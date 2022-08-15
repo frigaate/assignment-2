@@ -1,0 +1,84 @@
+:root{
+    --color-primary: #a54ab0;
+    --color-secondar: #9b3efb;
+    --color-tertiary: #eeeeee;
+}
+
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    /* background-color: aquamarine; */
+}
+
+.left h1{
+    color: var(--color-primary);
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-primary);
+}
+.left p{
+    font-size: 14px;
+    color: #333;
+}
+
+.left form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.left input{
+    padding: 5px 20px;
+    border: none;
+    color: var(--color-tertiary);
+    background-color: var(--color-tertiary);
+}
+
+.left a{
+    text-decoration: none;
+}
+
+.left button{
+    padding: 10px 15px;
+    background-color: var(--color-secondar);
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.right{
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondar));
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
